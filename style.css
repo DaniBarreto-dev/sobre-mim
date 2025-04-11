@@ -20,7 +20,7 @@
     div p{
         top: 0%;
         font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        font-size: 30px;
+        font-size: 2.3rem;
         
     }
    
@@ -33,17 +33,6 @@
             top: 0px;
             left: 0px;
 
-        }
-        .Circulo {
-            width: 150px; /* Largura do círculo */
-            height: 150px; /* Altura do círculo */
-            background-color: transparent; /* Fundo transparente */
-            border: 2px solid #ffffff; /* Cor e espessura da borda */
-            border-radius: 50%; /* Faz o elemento ficar redondo */
-            position: absolute; /* Necessário para centralizar */
-            top: 25%; /* Centraliza verticalmente */
-            left: 50%; /* Centraliza horizontalmente */
-            transform: translate(-50%, -50%); /* Move o círculo para o centro exato */
         }
         
         .circulo {
@@ -68,6 +57,36 @@
             }
         }
          
+        .Sobre{
+            text-decoration: none;
+            color: aliceblue;
+            position: absolute;
+            top: 3%;
+            left: 2%;
+            font-family: 'Courier New', Courier, monospace;
+            border: 0px;
+            
+        }
+        .Sobre:hover{
+            font-size: 20px;
+            transition: font-size 0.5s ease
+        }
+
+        .Contato{
+            text-decoration: none;
+            color: aliceblue;
+            position: absolute;
+            top: 3%;
+            left: 16%;
+            font-family: 'Courier New', Courier, monospace;
+            border: 0px;
+        }
+
+        .Contato:hover{
+            font-size: 20px;
+            transition: font-size 0.5s ease
+        }
+
    
     
     
