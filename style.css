@@ -5,6 +5,17 @@
         overflow: hidden ;
     }
 
+    .Parede{
+        width: 300px;
+        height: 600px;
+        background:linear-gradient(to right, rgb(0, 0, 0), white);
+        border-radius: 70px;
+    }
+    .Parede{
+        position: absolute;
+        top: 0%;
+        left: 97%
+    }
     .nome {
         width: 1000px;
         color: rgb(255, 255, 255);
@@ -87,6 +98,56 @@
             transition: font-size 0.5s ease
         }
 
+        .Projetos{
+            text-decoration: none;
+            color: aliceblue;
+            position: absolute;
+            top: 3%;
+            left: 26%;
+            font-family: 'Courier New', Courier, monospace;
+            border: 0px;
+        }
+
+        .Projetos:hover{
+            font-size: 20px;
+            transition: font-size 0.5s ease
+        }
+
+        .Sobre-mim{
+            text-decoration: none;
+            color: aliceblue;
+            position: absolute;
+            top: 3%;
+            left: 37%;
+            font-family: 'Courier New', Courier, monospace;
+            border: 0px;
+        }
+
+        .Sobre-mim:hover{
+            font-size: 20px;
+            transition: font-size 0.5s ease
+        }
+
+       .Botao{
+        background-color: #070707;
+        box-shadow: none;
+        color: aliceblue;
+        position: absolute;
+        top: 10%;
+        left: 98%;
+
+       }
+       
+
+       .Botao{
+        width: 20px
+    
+       }
+        
+       
+
+
+   
    
     
     
