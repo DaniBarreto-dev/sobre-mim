@@ -1,48 +1,93 @@
-/* CSS externo */
+/*body {
+    /*background-color: #0000ff;*/
 
-body {
-  font-family: Georgia, 'Times New Roman', Times, serif
-}
 
-h1 {
-  font-size: 2em; /*1rem = 16px -> 1em = M */
-  font-weight: bold;
-}
+    body {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      background-color: rgb(255, 255, 255);
+  }
+  .Gi{
+    color: rgb(0, 255, 204);
+  }
+  
+  h1 {
+      font-size: 30px;
+      font-weight: bold;
+  }
+  
+  h2{
+      font-size: 1.5rem;
+      font-weight:700;
+  }
+  
+  header {
+      background-color: rgb(179, 245, 234);
+      padding: 1rem 2rem;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 0;
+  }
 
-h2 {
-  font-size: 1.5rem;
-  font-weight: 700;
-}
+  
+  header ul {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+  }
+  
+  nav a {
+      color: black;
+      font-weight: 700;
+      padding: .5rem 1rem;
+  }
+  
+   section {
+    min-height: 80vh;
+      margin: 1rem;
+      padding: 1rem;
+      border-color: black;
+      border-style: solid;
+      border-width: 3px;
+      border-radius: 10px;
+  }
+  
+  p {
+      margin-bottom: 1rem;
+  }
 
-header {
-  background-color: #0077b6;
-  padding: 1rem 2rem;
-  box-shadow: 0 4px 8px  rgba(0, 0, 0, 0.1);
-  position: sticky; /* pode ser necessario top, left, bottom ou right*/
-  top: 0;
+  section#formaçãoAcademica{
+    border: none;
 
-}
+  }
 
-header ul {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-}
+  .titulo-secao{
+    text-align: center;
+    margin-bottom: 2rem;
+  }
 
-nav a {
-  color: #ffffff;
-  font-weight: 700;
-  padding: .5rem 1rem;
-}                                                       
+  .card{
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 2px 6pc rgba(0, 0, 0, a);
+    list-style: none;
+  }
 
-header a:hover {
-  background-color: #023e8a;
-}
+  .titulo-card{
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    font-size: 1.3rem;
 
-section {
-  height: 80vh;
-  margin: 2rem;
-  scroll-margin-top: 4rem; 
-  padding: 1rem;
-  border: 1px solid #000000;
-}
+  }
+
+  .introdução-card{
+    font-size: 1rem;
+    color: gray;
+  }
+
+  .cards-em-coluna{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    
+  }
+
