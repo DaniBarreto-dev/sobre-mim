@@ -2,20 +2,7 @@
     body {
         height: 100vh;
         background:linear-gradient(to top, rgb(255, 255, 255) , rgb(0, 0, 0));
-        overflow: hidden ;
-    }
-
-    
-    .Parede{
-        width: 300px;
-        height: 600px;
-        background:linear-gradient(to right, rgb(0, 0, 0), white);
-        border-radius: 70px;
-    }
-    .Parede{
-        position: absolute;
-        top: 0%;
-        left: 97%
+        
     }
     .nome {
         width: 1000px;
@@ -26,7 +13,7 @@
         transform: translate(-50%, -50%);
         text-align: center; /* Opcional, para alinhar o conteúdo interno ao centro */
         font-family:Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 30px;
+        font-size: 50px;
     }
 
     div p{
@@ -36,16 +23,6 @@
         
     }
    
-
-        .Linha{
-            width: 300vh;
-            height: 9vh;
-            background-color: #070707;
-            position: absolute;
-            top: 0px;
-            left: 0px;
-
-        }
         
         .circulo {
             position: absolute;
@@ -68,83 +45,97 @@
                 opacity: 0.5;
             }
         }
-         
-        .Sobre{
-            text-decoration: none;
-            color: aliceblue;
-            position: absolute;
-            top: 3%;
-            left: 2%;
+  
+      
+      
+        
+        header {
+            background-color: rgb(2, 2, 2);
+            padding: 1rem 2rem;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+        }
+        
+        header ul {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+           
+        }
+        
+        header ul li a {
+            text-decoration: none; /* Remove a decoração de texto */
+            color: white; /* Define a cor do texto como branca */
             font-family: 'Courier New', Courier, monospace;
-            border: 0px;
+            font-size: 22px; /* Aumenta o tamanho da fonte */
+        }
+        
+        header ul li a:hover {
+            text-decoration: none;
+            color: rgb(94, 94, 95);
+            font-size: 22px; /* Mantém o tamanho da fonte ao passar o mouse */
+        }
+        
+        
+        .Daniel {
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 180px;
+            height: 180px;
+            border-radius: 100px;
+            border: 5px solid rgb(255, 255, 255); /* Adiciona uma borda branca */
+        }
+
+        nav a {
+            color: black;
+            font-weight: 700;
+            padding: .5rem 1rem;
+        }
+        
+         section {
+          min-height: 80vh;
+            margin: 1rem;
+            padding: 1rem;
+           
+        }
+        
+        .sobre{
+        position: relative;
+        top: 60%;
+        font-family: 'Courier New', Courier, monospace;
+        color: rgb(248, 255, 255);
+       
+        }
+        
+        section h1 {
+            position: absolute;
+            top: -4%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .Gia{
+            text-decoration: none; /* Remove a decoração de texto */
+            color: rgb(56, 56, 56); /* Define a cor do texto como branca */
+            font-family: 'Courier New', Courier, monospace;
+            font-size: px; /* Aumenta o tamanho da fonte */
+        }
+
+        .Gia:hover {
+            color: rgb(34, 33, 33); /* Define a cor do texto como branca */
+            font-family: 'Courier New', Courier, monospace;
+            text-transform: 0.5s;
+            font-size: 18px; /* Aumenta o tamanho da fonte */
             
         }
-        .Sobre:hover{
-            font-size: 20px;
-            transition: font-size 0.5s ease
-        }
-
-        .Contato{
-            text-decoration: none;
-            color: aliceblue;
-            position: absolute;
-            top: 3%;
-            left: 16%;
-            font-family: 'Courier New', Courier, monospace;
-            border: 0px;
-        }
-
-        .Contato:hover{
-            font-size: 20px;
-            transition: font-size 0.5s ease
-        }
-
-        .Projetos{
-            text-decoration: none;
-            color: aliceblue;
-            position: absolute;
-            top: 3%;
-            left: 26%;
-            font-family: 'Courier New', Courier, monospace;
-            border: 0px;
-        }
-
-        .Projetos:hover{
-            font-size: 20px;
-            transition: font-size 0.5s ease
-        }
-
-        .Sobre-mim{
-            text-decoration: none;
-            color: aliceblue;
-            position: absolute;
-            top: 3%;
-            left: 37%;
-            font-family: 'Courier New', Courier, monospace;
-            border: 0px;
-        }
-
-        .Sobre-mim:hover{
-            font-size: 20px;
-            transition: font-size 0.5s ease
-        }
-
-       .Botao{
-        background-color: #070707;
-        box-shadow: none;
-        color: aliceblue;
-        position: absolute;
-        top: 10%;
-        left: 98%;
-
-       }
-       
-
-       .Botao{
-        width: 20px
-    
-       }
         
+
        
 
 
