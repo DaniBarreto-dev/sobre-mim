@@ -2,11 +2,15 @@
     body {
         height: 100vh;
         background:linear-gradient(to top, rgb(255, 255, 255) , rgb(0, 0, 0));
+       
+            overflow: hidden;
+        }
         
-    }
+        
+
     .nome {
         width: 1000px;
-        color: rgb(255, 255, 255);
+        color: rgb(85, 80, 80);
         position: absolute;
         top: 50%;
         left: 50%;
@@ -54,8 +58,10 @@
             padding: 1rem 2rem;
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
             position: sticky;
-            top: 0;
+            top: 0; /* Mantém o header no topo enquanto houver espaço para rolagem */
+            z-index: 1000; /* Garante que ele fique acima dos outros elementos */
         }
+        
         
         header ul {
             display: flex;
@@ -66,7 +72,7 @@
         
         header ul li a {
             text-decoration: none; /* Remove a decoração de texto */
-            color: white; /* Define a cor do texto como branca */
+            color: rgb(201, 201, 201); /* Define a cor do texto como branca */
             font-family: 'Courier New', Courier, monospace;
             font-size: 22px; /* Aumenta o tamanho da fonte */
         }
@@ -89,7 +95,7 @@
             width: 180px;
             height: 180px;
             border-radius: 100px;
-            border: 5px solid rgb(255, 255, 255); /* Adiciona uma borda branca */
+            border: 5px solid rgb(73, 71, 71); /* Adiciona uma borda branca */
         }
 
         nav a {
@@ -105,14 +111,32 @@
            
         }
         
-        .sobre{
-        position: relative;
-        top: 60%;
-        font-family: 'Courier New', Courier, monospace;
-        color: rgb(248, 255, 255);
-       
+        .sobre {
+            position: relative;
+            top: 70%;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 17px;
+            color: rgb(44, 44, 48);
+            letter-spacing: 2px;
+            word-spacing: 5px;
+        
         }
         
+        
+        
+        #sobreMim {
+            background-color: rgba(0, 0, 0, 0.068); /* Preto com 50% de transparência */
+            color: rgb(83, 82, 82); /* Mantém o texto visível */
+
+        }
+        
+        #sobreMim {
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Sombra ao redor */
+        }
+        
+        
+        
+      
         section h1 {
             position: absolute;
             top: -4%;
@@ -133,6 +157,12 @@
             text-transform: 0.5s;
             font-size: 18px; /* Aumenta o tamanho da fonte */
             
+        }
+        
+        #formacaoAcademica, #hardSkills, #softSkills, #meusProjetos, #meusArtigos, #contato {
+            background-color: black;
+            color: white;
+            padding: 20px;
         }
         
 
