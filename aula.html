@@ -1,125 +1,138 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-        <!-- Meta informações sobre a página -->
+        <!-- Meta informações sobre a página. -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Meu Portfólio</title>
+        <title>Sobre mim</title>
+        
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="aula.css">
-        <style>
-            /* Adicione estilos personalizados aqui */
-        </style>
     </head>
+    <!-- HTML é tipo LEGO, não tem pescoço. -->
     <body>
-        <!-- Cabeçalho -->
+        <h1>Sumário</h1>
         <header>
             <nav>
                 <ul>
                     <li><a href="#sobreMim">Sobre mim</a></li>
-                    <li><a href="#formacaoAcademica">Formação acadêmica</a></li>
-                    <li><a href="#hardSkills">Hard skills</a></li>
-                    <li><a href="#softSkills">Soft skills</a></li>
-                    <li><a href="#meusProjetos">Meus projetos</a></li>
-                    <li><a href="#meusArtigos">Meus artigos</a></li>
+                    <li><a href="#formacaoAcademica">Formação Acadêmica</a></li>
+                    <li><a href="#hardSkills">Hard Skills</a></li>
+                    <li><a href="#softSkills">Soft Skills</a></li>
+                    <li><a href="#meusProjetos">Meus Projetos</a></li>
+                    <li><a href="#meusArtigos">Meus Artigos</a></li>
                     <li><a href="#contato">Contato</a></li>
                 </ul>
-            </nav> 
+            </nav>
         </header>
+        
+        <br>
 
-        <!-- Seções -->
-        <section id="sobreMim" class="">
-            <h1>Sobre mim</h1>
-            <p>Sobre Mim Sou um desenvolvedor apaixonado por tecnologia e inovação, com experiência em projetos colaborativos e repositórios no GitHub. Meu foco está em criar soluções eficientes e bem estruturadas, sempre buscando aprender e evoluir no mundo da programação.
-
-                Projetos e Repositórios Tenho repositórios públicos que demonstram minhas habilidades em desenvolvimento de software. Entre eles, destaco projetos que envolvem [tecnologias específicas ou linguagens que você utiliza] e que refletem meu compromisso com a qualidade e a funcionalidade.
-                
-                Habilidades
-                
-                Desenvolvimento de software com foco em [linguagens ou frameworks principais].
-                
-                Colaboração em projetos open-source.
-                
-                Experiência com controle de versão utilizando Git e GitHub.
-                
-                Contato Você pode conferir mais sobre meu trabalho no meu perfil do <a  class="Gi"href="https://github.com/DaniBarreto-dev?tab=packages">Meu Perfil do GitHub.</a></p>
+        <section id = sobreMim>
+        <h2>Sobre Mim</h2>
+        <p>Sou aluno do SENAI Conde José Vicente de Azevedo.</p>
+        <img src="https://avatars.githubusercontent.com/u/200938871?s=400&u=587c08e60d452a86cb14095ceef751f4df7ddc91&v=4" alt="Personagem 'Sage' de Sonic Frontiers; uma figura feminina de baixa estatura, pele clara, cabelos brancos e olhos vermelhos. Ela está vestindo um chapéu de festa e usando uma camiseta escrito 'Let's Go Dad!'." width="200" title="Personagem 'Sage' de Sonic Frontiers; uma figura feminina de baixa estatura, pele clara, cabelos brancos e olhos vermelhos. Ela está vestindo um chapéu de festa e usando uma camiseta escrito 'Let's Go Dad!'. Optei por usá-la por não ter fotos minhas, já que mal costumo tirá-las.">
+        <ul>
+            <li><a href="https://github.com/DarkusStorm" title="Clique para acessar meu portfólio no Github" target="_blank">Acesse meu Github</a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/tiago-alves-da-silva-79b6a635b/" target="_blank">Acesse meu LinkedIn</a>
+            </li>
+        </ul>
         </section>
+        
+        <br>
+        
+        <section id = formacaoAcademica>
+            <h2 class="titulo.secao">Formação Acadêmica</h2>
 
-        <section id="formacaoAcademica">
-          
+            <div class ="cards-em-coluna"></div>
 
-            <section id="hardSkills">
-                <h2 class="card">Hard skills</h2>
-                <ul class="">
-                    <li>
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/h"tml5/html5-original.svg" alt="HTML5" width="30">
-                        HTML5
-                    </li>
-                    <li>
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" width="30">
-                        CSS3
-                    </li>
-                    <li>
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" width="30">
-                        JavaScript
-                    </li>
-                    
-                    <li>
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" width="30">
-                        Git
-                    </li>
+            <ul class ="card">
+
+            <li class ="titulo">Ensino Fundamental</li>
+            <li class ="instituicao">Centro Educacional do SESI 402 - Vila das Mercês</li>
+            <li class ="ano">2023.</li>
+
+            <li class ="titulo">Técnico em Análise e Desenvolvimento de Sistemas</li>
+            <li class ="intituicao">SENAI "Conde José Vicente de Azevedo;</li>
+            <li class ="ano">2026.</li>
+
+            <li class ="titulo">Ensino Médio</li>
+            <li class ="instituicao">Centro Educacional do SESI 402 - Vila das Mercês</li>
+            <li class ="ano">2026.</li>
+
+            </ul>
+
+        </section>
+        
+        <br>
+        
+        <section id = hardSkills>
+            <h2 class="titulo.secao">Hard Skills</h2>
+            <div class="cards-em-linha">
+                <ul class="card">
+                <li class="icone">🌐</li>
+                <li class="titulo">Desenvolvimento Web</li>
+                <li class="descricao">Front-end, HTML, CSS e JavaScript;</li>
                 </ul>
-            </section>
-            
 
-        <section id="softSkills">
-            <h2>Soft skills</h2>
-            <p>Empatia</p>
-            <p>Controle emocional</p>
+                <ul class="card">
+                    <li class="icone">📚</li>
+                    <li class="titulo">Aprendizados Escolares</li>
+                    <li class="descricao">Conhecimentos obtidos durante o Ensino Fundamental e Médio;</li>
+                </ul>
+            </div>
         </section>
-
-        <section id="meusProjetos">
-            <h2>Meus projetos</h2>
+        
+        <br>
+        
+        <section id = softSkills>
+            <h2 class="titulo.secao">Soft Skills</h2>
             <ul>
-                <li>
-                    <a href="https://cauazitodev16.github.io/lopal-moonlander/">Jogo de Alunissagem (Pouso na Lua)</a>
-                </li>
+            <li>Bom ouvinte;</li>
+            <li>Conselheiro;</li>
+            <li>Aberto a opiniões;</li>
+            <li>Aprendo com facilidade.</li>
             </ul>
         </section>
         
-        <section id="meusArtigos" class="card">
-            <h class="titulo-card">Meus artigos</h2>
-            <p class="introdução-card" >Conteúdo em desenvolvimento...</p>
+        <br>
+        
+        <section id = meusProjetos>
+            <h2 class="titulo.secao">Meus Projetos</h2>
+            <ul>
+                <li><a href="https://github.com/DarkusStorm/lopal-moonlander">Simulação de Alunissagem (Acessível em meu Github)</a></li>
+            </ul>
+        </section id = meusProjetos>
+        
+        <br>
+
+        <section id = meusArtigos>
+            <h2 class="titulo.secao">Meus Artigos</h2>
         </section>
 
-        <!-- Rodapé -->
+        <br>
+
+        <section id="contato">
+            <h2 class="titulo.secao">Entre em Contato!</h2>
+            <form>
+                <input type="text" name="nome">
+                <input type="email" name="email">
+                <textarea name="mensagem" rows="5" cols="50"></textarea>
+                <input type="submit" name="botaoEnviar" value="Solicitar contato">
+            </form>
+        </section>
+
+        <br>
+        
+        <section>
+            <h2 class="titulo.secao">Links Úteis</h2>
+        </section>
+        
         <footer>
-            <p>Links úteis</p>
-            <ul>
-                <li>
-                    <a href="https://github.com/DaniBarreto-dev" target="_blank">Acesse o meu GitHub</a>
-                </li>
-                <li>
-                    <a href="">Acesse o meu LinkedIn</a>
-                </li>
-                <li>
-                    <a href="https://instagram.com/dani.barreeto" target="_blank">Acesse o meu Instagram</a>
-                </li>
-            </ul>
-            <section id="contato">
-                <h1>Entre em contato:</h1>
-                <h4>Seu nome: <input type="text" name="Nome"></h4>
-                <h4>Seu email: <input type="text" name="email"></h4>
-                <h4>Seu número de telefone: <input type="text" name="Número De Telefone"></h4>
-                <button>Enviar</button>
-            </section>
-            <ul>
-                <li>
-                    <h3>Este sou eu:</h3>
-                    <img src="https://avatars.githubusercontent.com/u/200938960?s=400&u=73ff02dd373fb7cd5890426fb07dc4cd6bce0ceb&v=4" width="90" height="90">
-                </li>
-            </ul>
-            <p>&copy Desenvolvido por Daniel Barreto de Paula, programador. Sujeito a processo se for copiado.</p>
+        <address>📍 São Paulo, SP - Brasil.</adress>
+        <p>&copy; Desenvolvido por Tiago Alves da Silva.</p>
         </footer>
     </body>
 </html>

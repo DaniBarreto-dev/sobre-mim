@@ -1,18 +1,50 @@
 
-    body {
-        height: 100vh;
-        background:linear-gradient(to top, rgb(255, 255, 255) , rgb(0, 0, 0));
-       
-            overflow: hidden;
+    
+        body {
+            height: 100vh;
+            background: var(--cor-gradiente);
+            background-size: 100% 70%; /* Faz o gradiente ocupar 100% da largura e 70% da altura */
+            background-repeat: no-repeat; /* Evita repetição */
+            background-position: top; /* Gradiente começa no topo */
         }
+        
+        /*Modos de cor*/
+        :root { /* pronúncia: [rut] */
+            --cor-primaria: #000000;
+            --cor-secundaria: rgb(255, 255, 255);
+            --cor-botao: #515050;
+            --cor-sombra: rgba(0, 0, 0, 0.1);
+            --cor-fundo-bolinhas:  rgba(255, 255, 255, 0.1);
+            --cor-terciaria: #484450;
+            --cor-quartenaria:  rgba(85, 80, 80, 0.416);
+            --cor-fundo: #fff;
+            --cor-gradiente: linear-gradient(to top, rgb(255, 255, 255), rgb(0, 0, 0));
+            --cor-primaria-texto: #466067;
+            --cor-bordas: #3c3e3e;
+        }
+        
+        [data-theme="dark"] {
+            --cor-primaria:  rgb(46, 0, 0) ;
+            --cor-secundaria: rgb(255, 255, 255);
+            --cor-botao: #0703036b;
+            --cor-sombra: rgba(255, 255, 255, 0.1);
+            --cor-fundo-bolinhas:  rgba(198, 196, 255, 0.1);
+            --cor-terciaria: #484450;
+            --cor-quartenaria:  rgba(85, 80, 80, 0.416);
+            --cor-fundo: #340303;
+            --cor-gradiente: linear-gradient(to top,rgb(255, 251, 251),  rgb(46, 0, 0));
+            --cor-primaria-texto: #466067;
+            --cor-bordas: #3c3e3e;
+        }
+        
         
         
 
     .nome {
         width: 1000px;
-        color: rgb(85, 80, 80);
+        color: var(--cor-quartenaria);
         position: absolute;
-        top: 50%;
+        top: 60%;
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center; /* Opcional, para alinhar o conteúdo interno ao centro */
@@ -31,7 +63,7 @@
         .circulo {
             position: absolute;
             border-radius: 50%; /* Faz o círculo ser redondo */
-            background-color: rgba(255, 255, 255, 0.1); /* Fundo transparente com leve opacidade */
+            background-color: var(--cor-fundo-bolinhas); /* Fundo transparente com leve opacidade */
             animation: moveCircle 10s infinite ease-in-out; /* Animação dos movimentos */
         }
         
@@ -54,9 +86,9 @@
       
         
         header {
-            background-color: rgb(2, 2, 2);
+            background-color: var(--cor-primaria);
             padding: 1rem 2rem;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 4px 8px var(--cor-sombra);
             position: sticky;
             top: 0; /* Mantém o header no topo enquanto houver espaço para rolagem */
             z-index: 1000; /* Garante que ele fique acima dos outros elementos */
@@ -72,14 +104,14 @@
         
         header ul li a {
             text-decoration: none; /* Remove a decoração de texto */
-            color: rgb(201, 201, 201); /* Define a cor do texto como branca */
+            color: var(--cor-secundaria); /* Define a cor do texto como branca */
             font-family: 'Courier New', Courier, monospace;
             font-size: 22px; /* Aumenta o tamanho da fonte */
         }
         
         header ul li a:hover {
             text-decoration: none;
-            color: rgb(94, 94, 95);
+            color: var(--cor-botao);
             font-size: 22px; /* Mantém o tamanho da fonte ao passar o mouse */
         }
         
@@ -92,14 +124,14 @@
             top: 30%;
             left: 50%;
             transform: translate(-50%, -50%);
-            width: 180px;
-            height: 180px;
+            width: 150px;
+            height: 150px;
             border-radius: 100px;
-            border: 5px solid rgb(73, 71, 71); /* Adiciona uma borda branca */
+            border: 5px solid var(--cor-botao); /* Adiciona uma borda branca */
         }
 
         nav a {
-            color: black;
+            color: var(--cor-primaria);
             font-weight: 700;
             padding: .5rem 1rem;
         }
@@ -113,10 +145,10 @@
         
         .sobre {
             position: relative;
-            top: 70%;
+            top: 60%;
             font-family: 'Courier New', Courier, monospace;
-            font-size: 17px;
-            color: rgb(44, 44, 48);
+            font-size: 13.5px;
+            color: var(--cor-terciaria);
             letter-spacing: 2px;
             word-spacing: 5px;
         
@@ -125,13 +157,13 @@
         
         
         #sobreMim {
-            background-color: rgba(0, 0, 0, 0.068); /* Preto com 50% de transparência */
-            color: rgb(83, 82, 82); /* Mantém o texto visível */
+            background-color: var(--cor-sombra); /* Preto com 50% de transparência */
+            color: var(--cor-botao); /* Mantém o texto visível */
 
         }
         
         #sobreMim {
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Sombra ao redor */
+            box-shadow: 0px 4px 8px var(--cor-sombra); /* Sombra ao redor */
         }
         
         
@@ -146,13 +178,13 @@
 
         .Gia{
             text-decoration: none; /* Remove a decoração de texto */
-            color: rgb(56, 56, 56); /* Define a cor do texto como branca */
+            color: var(--cor-botao); /* Define a cor do texto como branca */
             font-family: 'Courier New', Courier, monospace;
             font-size: px; /* Aumenta o tamanho da fonte */
         }
 
         .Gia:hover {
-            color: rgb(34, 33, 33); /* Define a cor do texto como branca */
+            color: var(--cor-primaria); /* Define a cor do texto como branca */
             font-family: 'Courier New', Courier, monospace;
             text-transform: 0.5s;
             font-size: 18px; /* Aumenta o tamanho da fonte */
@@ -160,11 +192,38 @@
         }
         
         #formacaoAcademica, #hardSkills, #softSkills, #meusProjetos, #meusArtigos, #contato {
-            background-color: black;
-            color: white;
-            padding: 20px;
+            background-color: var(--cor-bordas);
+            color: var(--cor-fundo);
+            padding: 16px;
         }
         
+      
+            
+
+
+        .card {
+            font-size: 60px;
+            position: relative; /* Altera para posicionamento padrão */
+            margin: 1rem; /* Adiciona espaçamento uniforme */
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: var(--cor-secundaria); /* Mantém a cor branca */
+            text-align: center; /* Alinha o texto ao centro */
+            padding: 16px; /* Adiciona espaçamento interno */
+            box-shadow: 0px 4px 8px var(--cor-sombra); /* Sombra semelhante aos outros elementos */
+        }
+        
+        .cards{
+            color: var(--cor-sombra);
+            font-size: 32px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            position: absolute;
+            top: 130%;
+            list-style: none; /* Remove as bolinhas */
+                padding: 0; /* Remove o espaço padrão à esquerda */
+                margin: 0; /* Ajusta o espaçamento */
+    
+            
+        }
 
        
 
