@@ -16,27 +16,27 @@
             --cor-sombra: rgba(0, 0, 0, 0.1);
             --cor-fundo-bolinhas:  rgba(255, 255, 255, 0.1);
             --cor-terciaria: #484450;
-            --cor-quartenaria:  rgba(85, 80, 80, 0.416);
-            --cor-fundo: #fff;
+            --cor-quartenaria:  rgba(85, 80, 80, 0.796);
+            --cor-fundo: #c2bbbb;
             --cor-gradiente: linear-gradient(to top, rgb(255, 255, 255), rgb(0, 0, 0));
             --cor-primaria-texto: #72787a;
             --cor-bordas: #3c3e3e;
         }
         
         [data-theme="dark"] {
-            --cor-primaria:  rgb(46, 0, 0) ;
-            --cor-secundaria: rgb(255, 255, 255);
+            
+            --cor-primaria:  rgba(255, 255, 255, 0.692) ;
+            --cor-secundaria: rgb(0, 0, 0);
             --cor-botao: #0703036b;
-            --cor-sombra: rgba(255, 255, 255, 0.1);
-            --cor-fundo-bolinhas:  rgba(198, 196, 255, 0.1);
-            --cor-terciaria: #484450;
-            --cor-quartenaria:  rgba(85, 80, 80, 0.416);
-            --cor-fundo: #340303;
-            --cor-gradiente: linear-gradient(to top,rgb(255, 251, 251),  rgb(46, 0, 0));
-            --cor-primaria-texto: #466067;
-            --cor-bordas: #3c3e3e;
+            --cor-sombra: rgba(192, 188, 188, 0.466);
+            --cor-fundo-bolinhas:  rgba(255, 255, 255, 0.185);
+            --cor-terciaria: #070707;
+            --cor-quartenaria:  rgb(85, 80, 80);
+            --cor-fundo: #252323;
+            --cor-gradiente: rgb(19, 19, 19);
+            --cor-primaria-texto: #ffffff;
+            --cor-bordas: #c9cfcf7e;
         }
-        
         
         
 
@@ -100,6 +100,7 @@
             justify-content: center;
             gap: 3rem;
             transition: 0.5s;
+            list-style: none;
            
         }
         
@@ -108,6 +109,7 @@
             color: var(--cor-secundaria); /* Define a cor do texto como branca */
             font-family: 'Courier New', Courier, monospace;
             font-size: 22px; /* Aumenta o tamanho da fonte */
+    
         }
         
         header ul li a:hover {
@@ -144,7 +146,16 @@
             margin: 1rem;
             padding: 1rem;
             transition: 0.5s;
+            list-style: none;
            
+        }
+        
+        section h1 {
+            position: absolute;
+            top: -4%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            list-style: none;
         }
         
         .sobre {
@@ -153,34 +164,13 @@
             top: 60%;
             font-family: 'Courier New', Courier, monospace;
             font-size: 18px;
-            color: var(--cor-terciaria);
+            color: var(--cor-quartenaria);
             letter-spacing: 2px;
             word-spacing: 5px;
-           
-        
         }
-        
-        
-        
-        #sobreMim {
-            background-color: var(--cor-sombra); /* Preto com 50% de transparência */
-            color: var(--cor-botao); /* Mantém o texto visível */
-
-        }
-        
-        #sobreMim {
-            box-shadow: 0px 4px 8px var(--cor-sombra); /* Sombra ao redor */
-        }
-        
-        
-        
-      
-        section h1 {
-            position: absolute;
-            top: -4%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
+            #sobremim {
+                box-shadow: var(--cor-fundo);
+            }
 
         .Gia{
             text-decoration: none; /* Remove a decoração de texto */
@@ -192,14 +182,13 @@
         .Gia:hover {
             color: var(--cor-primaria); /* Define a cor do texto como branca */
             font-family: 'Courier New', Courier, monospace;
-            text-transform: 0.5s;
             font-size: 18px; /* Aumenta o tamanho da fonte */
-            
+            text-transform: 0.7s;
         }
         
       
-        
-        #formacaoAcademica, #softSkills, #meusProjetos, #meusArtigos, #contato {
+        /*Seções*/
+         #formacaoAcademica, #softSkills, #meusProjetos, #meusArtigos, #contato {
             background-color: var(--cor-bordas);
             border-radius: 10px;
             color: var(--cor-fundo);
@@ -208,6 +197,8 @@
             line-height: 1.2; /* Espaçamento entre linhas */
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             font-size: 40px;
+            
+            
             ul, ol {
                 list-style: none; /* Remove os marcadores */
                 padding-left: 0; /* Remove o espaçamento à esquerda */
@@ -226,13 +217,6 @@
         }
         
         
-
-        
-        
-      
-            
-
-
         .card {
             font-size: 60px;
             position: relative; /* Altera para posicionamento padrão */
